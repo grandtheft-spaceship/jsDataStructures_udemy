@@ -44,3 +44,11 @@
     * **prev**
 
 ### Linked List and 'Node' Constructor Functions
+### Add To Head - part 1
+### Add To Head - part 2
+
+* If the Linked List is empty, when you add the first node, both the head and tail will point to the new node that you are adding
+* If the Linked List is NOT empty, you need to connect the Old Head's **previous property to the New Head** and connect the New Head's **next property to the Old Head**  
+  * Then, you need to change the listss **head pointer** to point at the New Head
+
+### Using Add To Head
