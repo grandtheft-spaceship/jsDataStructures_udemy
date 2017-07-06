@@ -24,6 +24,25 @@ LinkedList.prototype.addToTail = function(value) {
   this.tail = newNode;
 };
 
+LinkedList.prototype.removeHead = function() {
+  // 1. Check IF Linked List is empty
+  if (!this.head) return null;
+
+  // 2. Save the value of current head node
+  var headValue = this.head.value;
+
+  // 3. Point the list's HEAD pointer to NEW HEAD node
+  this.head = this.head.next;
+
+  // 4. Add logic to accomodate if list only had one node
+    // 4a. IF - there is a head node, set NEW HEAD's prev property to null
+    // 4b. ELSE - set list TAIL to null; ( if list only had one node, list HEAD would already be set to null )
+  this.head ? this.head.prev = null : this.tail = null;
+
+  // 5. Return value of OLD HEAD
+  return headValue;
+};
+
 // Node constructor
 function Node(value, next, prev) {
   this.value = value;

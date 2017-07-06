@@ -53,3 +53,5 @@
 
 ### Using Add To Head
 ### Add To Tail
+### Remove Head
+### Remove Tail
