@@ -22,7 +22,7 @@ LinkedList.prototype.addToTail = function(value) {
 
   this.tail ? this.tail.next = newNode : this.head = newNode;
   this.tail = newNode;
-}
+};
 
 // Node constructor
 function Node(value, next, prev) {
