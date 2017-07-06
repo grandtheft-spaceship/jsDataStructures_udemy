@@ -55,6 +55,20 @@ LinkedList.prototype.removeTail = function() {
   return tailValue;
 };
 
+LinkedList.prototype.search = function(searchValue) {
+  // 1. Create a variable, currentNode, whose value will change as we traverse through the linked list
+  var currentNode = this.head;
+  // 2. Being traversing the linked list
+    // 2a. WHILE there is a valid currentNode, our loop will continue to run
+    // 2b. If currentNode.next evaluates to null, our loop will break and we will return null
+    // 2c. While traversing, we will check if currentNode's value is EQUAL to our searchValue; when that's true, we will return the matching value
+  while (currentNode) {
+    if (currentNode.value === searchValue) return currentNode.value;
+    currentNode = currentNode.next;
+  }
+  return null;
+};
+
 // Node constructor
 function Node(value, next, prev) {
   this.value = value;
