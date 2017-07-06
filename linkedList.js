@@ -69,6 +69,23 @@ LinkedList.prototype.search = function(searchValue) {
   return null;
 };
 
+LinkedList.prototype.indexOf = function(value) {
+  // Function will take in a value and return an array containing all the indices where that value occurs in the linked list
+  // 1. Create an empty array to store indices
+  var index = 0;
+  var indices = new Array;
+
+  // 2. Being traversing linked list
+  var currentNode = this.head;
+
+  while (currentNode) {
+    if (currentNode.value === value) indices.push(index);
+    index++;
+    currentNode = currentNode.next;
+  }
+  return indices;
+};
+
 // Node constructor
 function Node(value, next, prev) {
   this.value = value;
