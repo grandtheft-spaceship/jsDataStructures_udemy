@@ -51,8 +51,16 @@
 * If the Linked List is NOT empty, you need to connect the Old Head's **previous property to the New Head** and connect the New Head's **next property to the Old Head**  
   * Then, you need to change the listss **head pointer** to point at the New Head
 
-### Using Add To Head
-### Add To Tail
-### Remove Head
-### Remove Tail
-### Search Method
+### Big O Notation and Calculating the Runtime of a Function
+
+* Notation used to classify how scalable an algorithm or function is
+  * Estimates the **worst case runtime** of an algorithm
+  * How long the algorithm takes to complete based on the input size
+* **Constant Runtime** - O(1)
+* **Linear Runtime** - O(n)
+* **Exponentional Runtime** - O(n^2) *O of n squared*
+  * Inefficient when you start having larger inputs
+* **Logarithmic Runtime** - O(log n)
+  * Highly efficient
+  * Example: **binary search**
+    * With every operation performed, you cut the input in half
