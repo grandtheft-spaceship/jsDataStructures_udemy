@@ -64,3 +64,15 @@
   * Highly efficient
   * Example: **binary search**
     * With every operation performed, you cut the input in half
+
+### Linked List Wrap-Up
+
+* Linked Lists have a **constant time, or O(1)** runtime when adding/removing nodes from the **head or tail**
+* Searching a linked list has a **linear runtime, or O(n)**
+* Practical Use Case:
+  * Online gaming
+  * Poker, board games, dominoes
+* Linked Lists are good for **memory management**
+  * They allow you to break up a lot of data that does not have to be stored together
+
+## Binary Search Tree
