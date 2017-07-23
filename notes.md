@@ -76,3 +76,20 @@
   * They allow you to break up a lot of data that does not have to be stored together
 
 ## Binary Search Tree
+### What is a Binary Search Tree?
+
+* A **binary search tree** is a collection of nodes that are all connected together in a certain way
+* Each **node** in a binary search tree will have **up to 2 child nodes**, a **left node** and a **right node**
+  * Each node contains some data, or value, similar to a linked list
+* All left nodes will have a **lesser or equal value than its parent node** and all right nodes will have a **greater value than its parent node**
+* Each node is basically a **sub-tree** because each node can be thought of as its own **root node** that has up to 2 children nodes
+  * This characteristic is what makes a binary search tree
+* **Desired Functionality For Binary Search Tree**
+  * **Insert**
+  * **Contains**
+  * **Depth First Traversal**
+    * Pattern for traversing the tree
+    * Starts at the top and follows through each branch all the way to its bottom
+  * **Breadth First Traversal**
+    * Pattern for traversing the tree
+    * Starts at the top, but goes across each level before going down to the next level
