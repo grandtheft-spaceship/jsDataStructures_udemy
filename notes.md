@@ -93,3 +93,12 @@
   * **Breadth First Traversal**
     * Pattern for traversing the tree
     * Starts at the top, but goes across each level before going down to the next level
+
+### Recursion - Part 1
+
+* **Recursion** is when a function calls itself
+* All recursive functions will have two cases; a **recursive case** and a **base case**
+
+### Recursion - Part 2 and the Call Stack
+
+* The **call stack** represents what order functions are called in and what variables they are being called with
