@@ -165,3 +165,33 @@
   * A **balanced** binary search tree means that *all, or most, of the nodes have both a left and right child*
     * Depending on the data you are using, you could potentionally end up with a tree where every node only having a right child node. Searching through this example would be similar to searching through a linked list
 * Anything you want to use *binary-search* can use a *binary-search tree*
+
+## Hash Table
+### What is a Hash Table?
+
+* Powerful data structures that provide **constant time lookup and insertion**
+  * Lookup: `O(1)`
+  * Insertion: `O(1)`
+* Neither a Linked List or Binary Search Tree can provide that runtime
+* Stores data in **key-value pairs**
+  * The **key is a string**
+  * The **value is any data-type**
+* A *hash table* is a table of **pre-determined length** where each cell, or **buckets**, of the table holds a piece of data which **has a key and a value**
+* We will **use an array as our table**, where **each index will be a bucket**
+* Each piece of data that we insert into our table needs to be assigned to a different bucket
+* To insert data into the hash table:
+  * We are going to take the **key** and **hash it to a number**
+  * When we create the actual hash table, we will *write a function that does this task*
+* To retrieve data out of the hash table:
+  * We will write a `get()` method that takes in the **key** of the desired data
+  * We will, again, **hash the key** and look up the desired data in the array using the *hashed number**
+    * The hash method we write should give us the same number as before when we first inserted the data into the hash table
+* When multiple pieces of data wind up in the same table, it is called a **collision**
+  * To handle **collisions**, we *form each bucket into a simple Linked List**
+    * This way, if there is data already at the desired bucket, we can just *chain what we want to insert at the end of the linked list*
+* **NOTE:** when iterating through *chains*, caused from *collisions*, the hash table loses it *constant runtime*
+  * **HOWEVER** if you make the hash table correctly with many buckets and a good hashing function, the amount of collisions should be minimal
+* The three functions our hash table will have are:
+  * `insert()`
+  * `get()`
+  * `hash()`

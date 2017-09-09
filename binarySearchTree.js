@@ -61,7 +61,7 @@ function iteractorFuncDepth(value) { // This is the function that we pass into t
 };
 
 function iteractorFuncBreadth(node) { // This is the function that we pass into the breadthFirstTraversal() method as its argument
-  console.log(node.value)
+  console.log(node.value);
 };
 
 
