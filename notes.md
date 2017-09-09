@@ -56,11 +56,11 @@
 * Notation used to classify how scalable an algorithm or function is
   * Estimates the **worst case runtime** of an algorithm
   * How long the algorithm takes to complete based on the input size
-* **Constant Runtime** - O(1)
-* **Linear Runtime** - O(n)
-* **Exponentional Runtime** - O(n^2) *O of n squared*
+* **Constant Runtime** - `O(1)`
+* **Linear Runtime** - `O(n)`
+* **Exponentional Runtime** - `O(n^2)` *O of n squared*
   * Inefficient when you start having larger inputs
-* **Logarithmic Runtime** - O(log n)
+* **Logarithmic Runtime** - `O(log n)`
   * Highly efficient
   * Example: **binary search**
     * With every operation performed, you cut the input in half
@@ -152,3 +152,16 @@
   * The node with the **smallest** value in the tree will be the **farthest, left node**
 * `getMaxVal()` - return largest value in tree
   * The node with the **larget** value in the tree will be the **farthest, right node**
+
+### Binary Search Tree Wrap-up
+
+* Used to store data because they are quick to search and retrieve data from
+  * Also quick to insert and delete data
+* Almost all the methods are utilizing the concept of "binary search"
+  * For example, when looking for a value in a binary search tree (`contains()`), you start at the ROOT node and with every step towards a CHILD node, you essentially *throw away* half of the nodes in the tree
+  * This is called **logarithmic runtime**, or `O(log n)`
+* Faster than the runtime for a Linked List - `O(n)`
+* **NOTE** Binary Search Trees are *most performant* when they are **balanced**
+  * A **balanced** binary search tree means that *all, or most, of the nodes have both a left and right child*
+    * Depending on the data you are using, you could potentionally end up with a tree where every node only having a right child node. Searching through this example would be similar to searching through a linked list
+* Anything you want to use *binary-search* can use a *binary-search tree*
