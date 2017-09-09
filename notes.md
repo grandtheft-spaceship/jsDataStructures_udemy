@@ -107,3 +107,25 @@
 ### Testing Insert
 ### Contains Method
 ### Testing Contains
+### Depth First Traversal - In-Order
+
+* This method will travel through each of the nodes in the binary search tree and call the `iteratorFunc()` on each of those nodes
+* The method will begin **traversing the tree at the top and follow each branch to its bottom before it moves on to the next branch** ("depth-first")
+* There are a few different variations of this type of traversal; the differentiator being in **what order they touch each node of the tree**
+* **In-Order** - Touches each node of the binary search tree in **order from least to greatest**
+  * The `iteratorFunc()` will run **first on the LEFT child node, then on the PARENT node, then on the RIGHT child node**
+  * We will *recursively* do this on all the sub-trees of the binary search treee
+
+### Testing Depth First Traversal - In-Order
+
+* Before testing out the `depthFirstTraversal` method, we need to write the logic for the `iteratorFunc` function
+  * `iteratorFunc` will simply take a value as an argument and `console.log` that value
+
+### Refactoring Depth First Traversal Method
+
+* We can easily refactor the logic in the `depthFirstTraversal()` method so we can touch the nodes of the tree in different orders
+* First, we will add an **order** parameter to the `depthFirstTraversal()` function:
+  * The 3 possible values we can pass as this argument are:
+    1. `in-order`
+    2. `pre-order`
+    3. `post-order`
