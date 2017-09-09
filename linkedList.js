@@ -2,7 +2,7 @@
 function LinkedList() {
   this.head = null;
   this.tail = null;
-}
+};
 
 LinkedList.prototype.addToHead = function(value) {
   // 1. Create a new node

@@ -49,7 +49,7 @@
 
 * If the Linked List is empty, when you add the first node, both the head and tail will point to the new node that you are adding
 * If the Linked List is NOT empty, you need to connect the Old Head's **previous property to the New Head** and connect the New Head's **next property to the Old Head**  
-  * Then, you need to change the listss **head pointer** to point at the New Head
+  * Then, you need to change the list's **head pointer** to point at the New Head
 
 ### Big O Notation and Calculating the Runtime of a Function
 
@@ -102,3 +102,5 @@
 ### Recursion - Part 2 and the Call Stack
 
 * The **call stack** represents what order functions are called in and what variables they are being called with
+
+### Insert Method
