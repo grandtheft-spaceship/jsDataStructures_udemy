@@ -38,11 +38,11 @@ BinarySearchTree.prototype.depthFirstTraversal = function(iteratorFunc, order) {
 
 BinarySearchTree.prototype.breadthFirstTraversal = function(iteratorFunc) {
   var queue = [this]; // 'this' refers to the ROOT NODE of the BinarySearchTree
-  while (queue.length) {  // 'while' loop will continue to run as long as the queue is NOT empty
+  while (queue.length) {  // LOOP will continue to run as long as the queue is NOT empty
     var treeNode = queue.shift(); // Takes the first node out of the queue and store it in treeNode variable
-    iteratorFunc(treeNode);
-    if (treeNode.left) queue.push(treeNode.left);
-    if (treeNode.right) queue.push(treeNode.right);
+    iteratorFunc(treeNode); // OUTPUT value of treeNode
+    if (treeNode.left) queue.push(treeNode.left); // Store LEFT child node into QUEUE
+    if (treeNode.right) queue.push(treeNode.right); // Store RIGHT child node into QUEUE
   }
 };
 

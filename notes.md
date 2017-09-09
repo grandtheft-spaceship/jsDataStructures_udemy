@@ -146,3 +146,4 @@
 
 ### Breadth First Traversal - part 2
 ### Testing Breadth First Traversal
+### Binary Search Tree - Independent Exercise
