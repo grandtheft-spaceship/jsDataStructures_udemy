@@ -147,3 +147,8 @@
 ### Breadth First Traversal - part 2
 ### Testing Breadth First Traversal
 ### Binary Search Tree - Independent Exercise
+
+* `getMinVal()` - return smallest value in tree
+  * The node with the **smallest** value in the tree will be the **farthest, left node**
+* `getMaxVal()` - return largest value in tree
+  * The node with the **larget** value in the tree will be the **farthest, right node**

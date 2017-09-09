@@ -46,6 +46,16 @@ BinarySearchTree.prototype.breadthFirstTraversal = function(iteratorFunc) {
   }
 };
 
+BinarySearchTree.prototype.getMinVal = function() {
+  if (this.left) return this.left.getMinVal();
+  else return this.value;
+};
+
+BinarySearchTree.prototype.getMaxVal = function() {
+  if (this.right) return this.right.getMaxVal();
+  else return this.value;
+};
+
 function iteractorFuncDepth(value) { // This is the function that we pass into the depthFirstTraversal() method as its argument
   console.log(value);
 };
@@ -53,6 +63,7 @@ function iteractorFuncDepth(value) { // This is the function that we pass into t
 function iteractorFuncBreadth(node) { // This is the function that we pass into the breadthFirstTraversal() method as its argument
   console.log(node.value)
 };
+
 
 // TEST DATA FOR NODE REPL
 // var bst = new BinarySearchTree(50);
