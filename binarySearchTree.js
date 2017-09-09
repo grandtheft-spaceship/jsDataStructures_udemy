@@ -31,8 +31,9 @@ BinarySearchTree.prototype.contains = function(value) {
 BinarySearchTree.prototype.depthFirstTraversal = function(iteratorFunc, order) { // iteratorFunc() is a function that will be a function that logs nodes to the console // REFACTOR: adding 'order' parameter
   if (order === 'pre-order') iteratorFunc(this.value); // IF PRE-ORDER, start with PARENT NODE, then LEFT BRANCH, last RIGHT BRANCH
   if (this.left) this.left.depthFirstTraversal(iteratorFunc, order); // RECURSIVELY will touch each node of the binary search tree in order from least to greatest
-  if (order === 'in-order') iteratorFunc(this.value); // IF IN-ORDER
+  if (order === 'in-order') iteratorFunc(this.value); // IF IN-ORDER, start with LEFT BRANCH, then PARENT NODE, then RIGHT BRANCH
   if (this.right) this.right.depthFirstTraversal(iteratorFunc, order);
+  if (order === 'post-order') iteratorFunc(this.value); // IF POST-ORDER, start with LEFT BRANCH, then RIGHT BRANCH, then PARENT NODE
 };
 
 function iteractorFunc(value) { // This is the function that we pass into the depthFirstTraversal() method as its argument
