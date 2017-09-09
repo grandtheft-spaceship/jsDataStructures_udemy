@@ -104,3 +104,6 @@
 * The **call stack** represents what order functions are called in and what variables they are being called with
 
 ### Insert Method
+### Testing Insert
+### Contains Method
+### Testing Contains
