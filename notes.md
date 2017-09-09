@@ -129,3 +129,6 @@
     1. `in-order`
     2. `pre-order`
     3. `post-order`
+
+### Depth First Traversal - Pre-Order
+### Testing Depth First Traversal Pre-Order
