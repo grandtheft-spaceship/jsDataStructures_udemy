@@ -133,3 +133,16 @@
 ### Depth First Traversal - Pre-Order
 ### Testing Depth First Traversal Pre-Order
 ### Depth First Traversal - Post-Order
+### Breadth First Traversal - part 1
+
+* Traverse through the whole tree, processing every node, but instead of going down every branch, it will **move down the tree by level**
+  * First, process **parent node**, then both **left and right children**, etc.
+* Useful for defining a *hierarchy* or level-of-command; such as ranks for employees of a company
+* **Queue** - A list that follows a **first-in, first-out** rule
+  * We will push elements through the back of the array and shift elements out of the front of the array
+    * First, we'll shift elements out of the front of the queue, one at a time, run the `iteratorFunc` on that node, then push its child nodes into the back of the queue
+    * Then, repeat these steps until all of the nodes are processed
+      * This makes sure that we process all of the nodes, level-by-level, instead of branch-by-branch
+
+### Breadth First Traversal - part 2
+### Testing Breadth First Traversal

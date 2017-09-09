@@ -36,6 +36,34 @@ BinarySearchTree.prototype.depthFirstTraversal = function(iteratorFunc, order) {
   if (order === 'post-order') iteratorFunc(this.value); // IF POST-ORDER, start with LEFT BRANCH, then RIGHT BRANCH, then PARENT NODE
 };
 
-function iteractorFunc(value) { // This is the function that we pass into the depthFirstTraversal() method as its argument
+BinarySearchTree.prototype.breadthFirstTraversal = function(iteratorFunc) {
+  var queue = [this]; // 'this' refers to the ROOT NODE of the BinarySearchTree
+  while (queue.length) {  // 'while' loop will continue to run as long as the queue is NOT empty
+    var treeNode = queue.shift(); // Takes the first node out of the queue and store it in treeNode variable
+    iteratorFunc(treeNode);
+    if (treeNode.left) queue.push(treeNode.left);
+    if (treeNode.right) queue.push(treeNode.right);
+  }
+};
+
+function iteractorFuncDepth(value) { // This is the function that we pass into the depthFirstTraversal() method as its argument
   console.log(value);
 };
+
+function iteractorFuncBreadth(node) { // This is the function that we pass into the breadthFirstTraversal() method as its argument
+  console.log(node.value)
+};
+
+// TEST DATA FOR NODE REPL
+// var bst = new BinarySearchTree(50);
+// bst.insert(30)
+// bst.insert(70)
+// bst.insert(20)
+// bst.insert(45)
+// bst.insert(60)
+// bst.insert(100)
+// bst.insert(10)
+// bst.insert(35)
+// bst.insert(59)
+// bst.insert(85)
+// bst.insert(105)
