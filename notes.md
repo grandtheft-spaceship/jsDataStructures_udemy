@@ -230,3 +230,15 @@
 
 * `retrieveAll()` - return an array of all the hash nodes in the Hash Table
   * Should return every node, even the ones that are chained in the same bucket
+
+### Hash Table Wrap-up
+
+* Incredibly performant data structure
+* Pros:
+  * Constant runtime lookup (`O(1)`)
+  * Constant runtime insertion (`O(1)`)
+* Practical Uses:
+  * Email provider storing addresses
+  * Users of an application
+* Cons:
+  * Data doesn't store references to other pieces of data in the data structure
