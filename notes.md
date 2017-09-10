@@ -208,3 +208,5 @@
 * `charCodeAt(index)` - String method that gives Unicode number of a character
   * The `index` argument will let the `charCodeAt()` method know which character in the string to turn into a number
 * The modulus `%` operator returns the **remainder** of a division operation
+
+### Hash Method
