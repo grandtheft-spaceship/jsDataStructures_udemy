@@ -226,3 +226,7 @@
 
 ### Testing Refactored Insert Method
 ### Get method
+### Hash Table - Independent Exercise
+
+* `retrieveAll()` - return an array of all the hash nodes in the Hash Table
+  * Should return every node, even the ones that are chained in the same bucket

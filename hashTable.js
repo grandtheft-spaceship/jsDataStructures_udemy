@@ -51,3 +51,15 @@ HashTable.prototype.get = function(key) {
     return null; // If NO MATCH, return null
   }
 };
+
+HashTable.prototype.retrieveAll = function() {
+  var allNodes = []; // New array to store all the hash table's NODES
+  for (var i = 0; i < this.numBuckets; i++) { // Loop through all the buckets of the table
+    var currentNode = this.buckets[i]; // Set current node
+    while (currentNode) { // Loop through current node's chain to collect all nodes within the same bucket
+      allNodes.push(currentNode); // store all the nodes that are chained together within the same bucket
+      currentNode = currentNode.next; // continue moving down the chain until there are no more nodes
+    }
+  }
+  return allNodes; // return array containing all the hash table's nodes
+}
