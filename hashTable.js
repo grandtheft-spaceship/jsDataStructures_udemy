@@ -38,3 +38,16 @@ HashTable.prototype.insert = function(key, value) {
     currentNode.next = new HashNode(key, value); // Loop breaks, currentNode should equal last node in the chain, then set currentNode's next property to new node of key/value pair
   }
 };
+
+HashTable.prototype.get = function(key) {
+  var index = this.hash(key); // Which bucket we want to look in
+  if (!this.buckets[index]) return null; // Bucket is empty
+  else {
+    var currentNode = this.buckets[index];
+    while (currentNode) { // Loop while there is a current node
+      if (curretNode.key === key) return curretNode.value; // keys match and we have found desired node
+      currentNode = currentNode.next; // IF NO MATCH, continue looking through the chain
+    }
+    return null; // If NO MATCH, return null
+  }
+};

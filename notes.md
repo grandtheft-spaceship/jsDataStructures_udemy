@@ -225,3 +225,4 @@
   * To fix this, we are going to add an `else if` statement
 
 ### Testing Refactored Insert Method
+### Get method
