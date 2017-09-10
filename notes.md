@@ -201,3 +201,10 @@
 * We need two constructor functions:
   * One for the table itself
   * One for the nodes that we will insert into the table
+
+### CharCodeAt Method and Modulus Operator
+
+* In JavaScript, **every character corresponds with a Unicode number**
+* `charCodeAt(index)` - String method that gives Unicode number of a character
+  * The `index` argument will let the `charCodeAt()` method know which character in the string to turn into a number
+* The modulus `%` operator returns the **remainder** of a division operation
