@@ -195,3 +195,9 @@
   * `insert()`
   * `get()`
   * `hash()`
+
+### Hash Table and Hash Node Constructor Functions
+
+* We need two constructor functions:
+  * One for the table itself
+  * One for the nodes that we will insert into the table
