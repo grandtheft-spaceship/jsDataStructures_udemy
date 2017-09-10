@@ -210,3 +210,18 @@
 * The modulus `%` operator returns the **remainder** of a division operation
 
 ### Hash Method
+
+* Convert **key** of data into a unique number that will correspond into which bucket it will be stored in the Hash Table
+
+### Insert Method
+
+* Convert a **key-value pair** into a **hash node** and place that node into the **correct bucket of the hash table**
+
+### Testing Insert Method
+### Refactoring Insert Method
+
+* We want to refactor the `insert()` method to not only insert new data, but to also *modify current data* if needed
+* Because we are always checking `currentNode.next`; we will actually never get to check if the first node in table is the one we are targeting
+  * To fix this, we are going to add an `else if` statement
+
+### Testing Refactored Insert Method
